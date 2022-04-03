@@ -144,7 +144,7 @@ namespace assignment {
         return true;
       }
 
-      if (root_->left == nullptr) {
+      if (child->left == nullptr) {
         Node* new_root = child->right;
         delete child;
         node->right = new_root;
@@ -173,7 +173,7 @@ namespace assignment {
         return true;
       }
 
-      if (root_->left == nullptr) {
+      if (child->left == nullptr) {
         Node* new_root = child->right;
         delete child;
         node->left = new_root;
